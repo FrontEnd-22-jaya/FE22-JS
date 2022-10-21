@@ -20,14 +20,14 @@ html {
 /*--------------------------------------------Navbar-setting------------------------------------ */
 
 nav {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 20px 0;
   margin-bottom: 25px;
-  /* border-bottom: 3px solid rgb(231, 230, 230); */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   /* box-shadow: 7px 0 20px lightgray; */
 }
 
@@ -57,7 +57,7 @@ nav {
   transition: 0.5s ease-in-out;
   color: rgb(154, 93, 183);
   font-weight: 700;
-  background-color: white;
+  background-color: #fffff000;
   padding: 8px 16px;
   transition: all 0.3s ease-in-out;
 }
