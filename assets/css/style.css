@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-style: none;
+    text-decoration: none;
+    outline: none;
+  }
+
+  nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    /* box-shadow: 7px 0 20px lightgray; */
+  }
+  
+  #sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  
+  #logo h3 {
+    font-size: 20px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+  }
+  
+  #logo h3:hover {
+    color: gray;
+    cursor: pointer;
+  }
+  
+  #page {
+    display: flex;
+  }
+  
+  #page li a {
+    margin: 0 20px;
+    transition: 0.5s ease-in-out;
+    color: rgb(154, 93, 183);
+    font-weight: 700;
+    background-color: #fffff000;
+    padding: 8px 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  #page li a:hover {
+    border-radius: 20px;
+    background-color: rgb(225, 197, 253);
+    color: rgb(101, 61, 120);
+  }
+
+  botton{
+    background-color: #983BFF;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  #profile {
+    display: flex;
+    align-items: center;
+  }
+
+  #iconProfile a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    margin-left: 8px;
+  }
+  
+  /* css section home */
+  #home{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 160px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .home-text h1{
+    /* position: absolute; */
+    padding-bottom: 15x;
+    width: 590px;
+    /* height: 176px;
+    left: 120px;
+    top: 300px; */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 70%;
+    padding-bottom: 30px;
+    
+
+    letter-spacing: -0.023em;
+    }
+
+  .home-text h4{
+    width: 590px;
+    height: 99px;
+    left: 122px;
+    top: 488px; 
+   
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    /* or 30px */
+    
+    letter-spacing: -0.023em;
+    
+    color: #000000; 
+  }
+  .home-img{
+    max-width: 100%;
+    height: auto;
+  }
+  /* css section steps */
+  #steps{
+    display: flex;
+    justify-content: space-around;
+    background-color: #D1A8FF;
+  }
