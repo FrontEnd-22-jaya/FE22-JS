@@ -27,6 +27,7 @@ body {
   transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
 }
 
+/* ketika tombol regis ditekan maka akan muncul pop up modalnya yang sebelumnya visbilitynya hidden menjadi visible */
 .show-modal {
   top: 50%;
   opacity: 1;
@@ -48,6 +49,7 @@ body {
   cursor: pointer;
 }
 
+/* Create your JobSidian's account */
 .popup .form h2 {
   text-align: center;
   color: #222;
@@ -59,24 +61,37 @@ body {
   margin: 15px 20px;
 }
 
+.popup .form .form-element .label {
+  font-size: 10px;
+  color: #222;
+}
+
+/* forgot password */
 .popup .form .form-element a {
   display: block;
   text-align: right;
   font-size: 15px;
 }
 
-.popup .form .form-element .label {
-  font-size: 10px;
-  color: #222;
+.form-element {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.popup .form .form-element input[type="text"],
+.popup .form .form-element input[type="password"],
+.popup .form .form-element input[type="tel"] {
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #aaa;
+  border-radius: 5px;
 }
 
 .input {
   background-color: #fff;
-}
-
-.form-element {
-  position: relative;
-  margin-bottom: 15px;
 }
 
 input:focus {
@@ -110,18 +125,7 @@ input:focus {
   font-size: 11px;
 }
 
-.popup .form .form-element input[type="text"],
-.popup .form .form-element input[type="password"],
-.popup .form .form-element input[type="tel"] {
-  margin-top: 5px;
-  display: block;
-  width: 100%;
-  padding: 10px;
-  outline: none;
-  border: 1px solid #aaa;
-  border-radius: 5px;
-}
-
+/* tombol sign up dan connect to google */
 .popup .form .form-element button {
   width: 100%;
   height: 35px;
@@ -134,6 +138,33 @@ input:focus {
   cursor: pointer;
 }
 
-.popup .form .form-element h5 {
+/* Already have an account dan Login */
+#go-to-login {
   display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+#go-to-login h5,
+#go-to-login a {
+  font-size: 14px;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+#go-to-login a {
+  color: #1a73e8;
+}
+
+/* eye icon di password dan re-enter password */
+span {
+  position: absolute;
+  right: 15px;
+  transform: translate(0, -50%);
+  top: 50%;
+  cursor: pointer;
+}
+
+#non-slash {
+  display: none;
 }
