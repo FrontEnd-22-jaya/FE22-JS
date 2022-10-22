@@ -138,6 +138,19 @@ input:focus {
   cursor: pointer;
 }
 
+/* eye icon di password dan re-enter password */
+span {
+  position: absolute;
+  right: 15px;
+  transform: translate(0, -50%);
+  top: 50%;
+  cursor: pointer;
+}
+
+#non-slash {
+  display: none;
+}
+
 /* Already have an account dan Login */
 #go-to-login {
   display: flex;
@@ -154,17 +167,4 @@ input:focus {
 
 #go-to-login a {
   color: #1a73e8;
-}
-
-/* eye icon di password dan re-enter password */
-span {
-  position: absolute;
-  right: 15px;
-  transform: translate(0, -50%);
-  top: 50%;
-  cursor: pointer;
-}
-
-#non-slash {
-  display: none;
 }

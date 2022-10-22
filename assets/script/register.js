@@ -18,7 +18,7 @@ window.addEventListener("click", windowOnClick);
 
 function hidePassword() {
   var pw = document.getElementById("myInput");
-  var show = document.getElementBsyId("non-slash");
+  var show = document.getElementById("non-slash");
   var hide = document.getElementById("eye-slash");
 
   if (pw.type === "password") {
