@@ -8,18 +8,20 @@
   <div class="close-btn">&times;</div>
     <div class="form" >
       <h2>Create your JobSidian's account</h2>
-      <form action="../index.html" method="POST">
+      <form id="form" action="../index.html" method="POST" onsubmit="return checkInputs()">
         <div class="form-element">
           <input type="text" id="email" class="input" required/>
           <label class="input-label">
             Email Address
           </label>
+          <small>Error message</small>
         </div>
         <div class="form-element">
           <input type="tel" id="phone" class="input" required/>
             <label class="input-label">
               Phone
             </label>
+            <small>Error message</small>
         </div>
         <div class="form-element">
           <input type="password" id="myInput" class="input" required/>
@@ -30,6 +32,7 @@
             <i class="fa-regular fa-eye" id="non-slash"></i>
             <i class="fa-regular fa-eye-slash" id="eye-slash"></i>
           </span>
+          <small>Error message</small>
         </div>
         <div class="form-element">
           <input type="password" id="myInput1" class="input" required/>
@@ -40,12 +43,13 @@
             <i class="fa-regular fa-eye" id="non1-slash"></i>
             <i class="fa-regular fa-eye-slash" id="eye1-slash"></i>
           </span>
+          <small>Error message</small>
         </div>
         <div class="form-element">
           <a href="#">Forgot your password?</a>
         </div>
         <div class="form-element">
-          <button>Sign Up </button>
+          <button type="submit">Sign Up </button>
         </div>
         <div class="form-element">
           <hr>
