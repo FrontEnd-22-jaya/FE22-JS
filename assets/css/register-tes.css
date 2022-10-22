@@ -118,7 +118,8 @@ input:focus {
 
 .form-element.active .input-label,
 .input:focus + .input-label,
-.input:active + .input-label {
+.input:active + .input-label,
+.input:valid + .input-label {
   color: #1a73e8;
   top: -6px;
   background-color: #fff;
@@ -147,7 +148,8 @@ span {
   cursor: pointer;
 }
 
-#non-slash {
+#non-slash,
+#non1-slash {
   display: none;
 }
 
