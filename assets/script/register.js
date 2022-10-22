@@ -50,7 +50,6 @@ function hidePassword1() {
     hide.style.display = "block";
   }
 }
-
 // validation form
 const form = document.getElementById("form");
 const email = document.getElementById("email");
