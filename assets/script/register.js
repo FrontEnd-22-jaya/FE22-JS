@@ -63,6 +63,12 @@ form.addEventListener("submit", (e) => {
   checkInputs();
 });
 
+form.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  checkInputs();
+});
+
 function checkInputs() {
   // trim to remove the whitespaces
   const emailValue = email.value.trim();
@@ -93,7 +99,7 @@ function checkInputs() {
   }
 
   if (password2Value === "") {
-    setErrorFor(password2, "Password2 cannot be blank");
+    setErrorFor(password2, "Confirm Password cannot be blank");
   } else if (passwordValue !== password2Value) {
     setErrorFor(password2, "Passwords does not match!");
   } else {
