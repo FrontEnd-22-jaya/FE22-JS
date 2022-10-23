@@ -1,5 +1,5 @@
 // pop up modal
-const modal = document.querySelector(".popup");
+const modal = document.querySelector(".modal-bg");
 const trigger = document.querySelector(".regis-btn");
 const closeButton = document.querySelector(".close-btn");
 

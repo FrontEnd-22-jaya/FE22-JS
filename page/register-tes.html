@@ -1,33 +1,36 @@
+<!-- CSS -->
 <link rel="stylesheet" href="../assets/css/register-tes.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<!-- CSS utk logo eye pada password -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+<!-- sign up button -->
 <div class="regis-btn">
-    <button id="show-login">Sign Up</button>
+  <button id="show-login">Sign Up</button>
 </div>
 
-<div class="popup">
-  <div class="close-btn">&times;</div>
-    <div class="form" >
+<div>
+  <img src="Dr-Wesley.jpg" alt="" />
+</div>
+
+<div class="modal-bg">
+  <div class="popup">
+    <div class="close-btn">&times;</div>
+    <div class="form">
       <h2>Create your JobSidian's account</h2>
-      <form id="form" action="../index.html" method="POST" >
+      <form id="form" action="../index.html" method="POST">
         <div class="form-element">
-          <input type="text" id="email" class="input" required/>
-          <label class="input-label">
-            Email Address
-          </label>
+          <input type="text" id="email" class="input" required />
+          <label class="input-label"> Email Address </label>
           <small>Error message</small>
         </div>
         <div class="form-element">
-          <input type="tel" id="phone" class="input" required/>
-            <label class="input-label">
-              Phone
-            </label>
-            <small>Error message</small>
+          <input type="tel" id="phone" class="input" required />
+          <label class="input-label"> Phone </label>
+          <small>Error message</small>
         </div>
         <div class="form-element">
-          <input type="password" id="myInput" class="input" required/>
-          <label class="input-label">
-            Password
-          </label>
+          <input type="password" id="myInput" class="input" required />
+          <label class="input-label"> Password </label>
           <span class="eye" onclick="hidePassword()">
             <i class="fa-regular fa-eye" id="non-slash"></i>
             <i class="fa-regular fa-eye-slash" id="eye-slash"></i>
@@ -35,10 +38,8 @@
           <small>Error message</small>
         </div>
         <div class="form-element">
-          <input type="password" id="myInput1" class="input" required/>
-          <label class="input-label">
-            Re-enter Password
-          </label>
+          <input type="password" id="myInput1" class="input" required />
+          <label class="input-label"> Re-enter Password </label>
           <span class="eye" onclick="hidePassword1()">
             <i class="fa-regular fa-eye" id="non1-slash"></i>
             <i class="fa-regular fa-eye-slash" id="eye1-slash"></i>
@@ -52,7 +53,7 @@
           <button>Sign Up</button>
         </div>
         <div class="form-element">
-          <hr>
+          <hr />
         </div>
         <div class="form-element">
           <button>Connect to Google</button>
