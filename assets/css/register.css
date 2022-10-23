@@ -1,3 +1,5 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"); */
+
 * {
   margin: 0px;
   padding: 0px;
@@ -5,7 +7,6 @@
 }
 
 body {
-  background-color: aqua;
   font-family: "Poppins", sans-serif;
 }
 
@@ -13,26 +14,37 @@ body {
   position: absolute;
 }
 
+.modal-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
 .popup {
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 0;
-  visibility: hidden;
-  transform: translate(-50%, -50%) scale(1.25);
-  width: 480px;
+  transform: translate(-50%, -50%);
+  background-color: white;
   padding: 70px 30px 50px;
-  background: white;
+  width: 480px;
   border-radius: 15px;
-  transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
+  /* transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms; */
 }
 
+/* ketika tombol regis ditekan maka akan muncul pop up modalnya yang sebelumnya visbilitynya hidden menjadi visible */
 .show-modal {
-  top: 50%;
   opacity: 1;
   visibility: visible;
-  transform: translate(-50%, -50%) scale(1);
-  transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform;
+  /* transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms; */
 }
 
 .popup .close-btn {
@@ -48,6 +60,7 @@ body {
   cursor: pointer;
 }
 
+/* Create your JobSidian's account */
 .popup .form h2 {
   text-align: center;
   color: #222;
@@ -56,13 +69,8 @@ body {
 }
 
 .popup .form .form-element {
+  position: relative;
   margin: 15px 20px;
-}
-
-.popup .form .form-element a {
-  display: block;
-  text-align: right;
-  font-size: 15px;
 }
 
 .popup .form .form-element .label {
@@ -70,9 +78,7 @@ body {
   color: #222;
 }
 
-.popup .form .form-element input[type="text"],
-.popup .form .form-element input[type="password"],
-.popup .form .form-element input[type="tel"] {
+.popup .form .form-element input {
   margin-top: 5px;
   display: block;
   width: 100%;
@@ -82,6 +88,55 @@ body {
   border-radius: 5px;
 }
 
+.popup .form .form-element input:focus {
+  border-color: #1a73e8;
+}
+
+.popup .form .form-element.success input {
+  border-color: #2ecc71;
+}
+
+.popup .form .form-element.error input {
+  border-color: #e74c3c;
+}
+
+.input {
+  background-color: #fff;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #1a73e8;
+}
+
+.input-label {
+  position: absolute;
+  color: #80868b;
+  font-size: 14px;
+  font-weight: 400;
+  max-width: calc(100%- (2 * 8px));
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: 0.25s;
+  left: 5px;
+  top: 10px;
+  padding: 0px 8px;
+  transition: 0.25s;
+  cursor: text;
+}
+
+.form-element.active .input-label,
+.input:focus + .input-label,
+.input:active + .input-label,
+.input:valid + .input-label {
+  color: #1a73e8;
+  top: -6px;
+  background-color: #fff;
+  font-size: 11px;
+}
+
+/* tombol sign up dan connect to google */
 .popup .form .form-element button {
   width: 100%;
   height: 35px;
@@ -94,6 +149,46 @@ body {
   cursor: pointer;
 }
 
-.popup .form .form-element h5 {
+.form-element small {
+  color: #e74c3c;
+  position: relative;
+  left: 5px;
+  top: 5px;
+  visibility: hidden;
+}
+
+.form-element.error small {
+  visibility: visible;
+}
+
+/* eye icon di password dan re-enter password */
+span {
+  position: absolute;
+  right: 15px;
+  transform: translate(0, -50%);
+  top: 35%;
+  cursor: pointer;
+}
+
+#non-slash,
+#non1-slash {
+  display: none;
+}
+
+/* Already have an account dan Login */
+#go-to-login {
   display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+#go-to-login h5,
+#go-to-login a {
+  font-size: 14px;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+#go-to-login a {
+  color: #1a73e8;
 }
