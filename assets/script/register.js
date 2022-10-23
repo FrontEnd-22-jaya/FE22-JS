@@ -66,7 +66,7 @@ form.addEventListener("submit", (e) => {
   checkInputs();
 });
 
-form.addEventListener("click", (e) => {
+form.addEventListener("change", (e) => {
   e.preventDefault();
 
   checkInputs();
