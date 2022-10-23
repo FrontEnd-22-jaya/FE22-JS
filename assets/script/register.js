@@ -1,3 +1,11 @@
+//variabel
+const form = document.getElementById("form");
+let email = document.getElementById("email");
+let phone = document.getElementById("phone");
+let password = document.getElementById("myInput");
+let password2 = document.getElementById("myInput1");
+let register = document.getElementById("register");
+
 // pop up modal
 const modal = document.querySelector(".modal-bg");
 const trigger = document.querySelector(".regis-btn");
@@ -50,13 +58,8 @@ function hidePassword1() {
     hide.style.display = "block";
   }
 }
-// validation form
-const form = document.getElementById("form");
-const email = document.getElementById("email");
-const phone = document.getElementById("phone");
-const password = document.getElementById("myInput");
-const password2 = document.getElementById("myInput1");
 
+// validation form
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -126,3 +129,31 @@ function isEmail(email) {
 function isPhone(phone) {
   return /[0-9]$/.test(phone);
 }
+
+// fetch data to API
+
+async function registerAccount(data) {
+  try {
+    let result = await fetch("https://634f64bddf22c2af7b504acd.mockapi.io/jobsidian/users", {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json;charset=UTF-8",
+      },
+    });
+    console.log("Congratulations! Your account has been successfully created!", result);
+  } catch (error) {
+    console.log("Failed!");
+  }
+}
+
+register.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  let user_regis = {
+    email: email.value,
+    phone: phone.value,
+    password: password.value,
+  };
+  registerAccount(user_regis);
+});
