@@ -5,7 +5,19 @@
     border-style: none;
     text-decoration: none;
     outline: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    line-height: 150%;
+    letter-spacing: -0.023em;
   }
+
+  /* @media screen and (max-width: 1000px) {
+    #sticky,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+} */
 
   nav {
     background-color: rgba(255, 255, 255, 0.9);
@@ -88,19 +100,10 @@
     /* position: absolute; */
     padding-bottom: 15x;
     width: 590px;
-    /* height: 176px;
-    left: 120px;
-    top: 300px; */
-
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 700;
     font-size: 64px;
     line-height: 70%;
     padding-bottom: 30px;
-    
-
-    letter-spacing: -0.023em;
     }
 
   .home-text h4{
@@ -108,18 +111,12 @@
     height: 99px;
     left: 122px;
     top: 488px; 
-   
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 150%;
-    /* or 30px */
-    
-    letter-spacing: -0.023em;
-    
     color: #000000; 
+    padding-bottom: 20px;
   }
+
   .home-img{
     max-width: 100%;
     height: auto;
@@ -133,20 +130,12 @@
   }
 
   #steps h3{
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 36px;
-    line-height: 150%;
-    /* or 54px */
-    
-
     text-align: center;
     margin-top: 90px;
     padding-top: 60px;
     padding-bottom: 20px;
-    letter-spacing: -0.023em;
-
     color: #000000;
   }
 
@@ -161,31 +150,372 @@
 		height: 100px;
 		margin-left: 25px;
     margin-right: 25px;
-   
-    
-
     background: #FFFFFF;
-    padding-bottom: 15px;
+    padding-bottom: 50px;
     box-shadow: 3px 3px 4px 3px rgba(0, 0, 0, 0.25);
 	}
 
   .flex-item h5{
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: bold;
     font-size: 20px;
-    line-height: 150%;
-    /* or 30px */
-
     text-align: center;
-    letter-spacing: -0.023em;
     padding-top: 15px;
-
     color: #000000;
   }
 
   .flex-item p{
     padding: 15px;
     padding-bottom: 15px;
+
+  }
+
+  /* CSS section about us */
+  /* bestJob */
+  #aboutUs{
+    display: inline;
+    justify-content: baseline;
+    padding-top: 90px;
+    padding-right: 0;
+  }
+
+  @media (max-width: 800px) {
+    #aboutUs {
+      flex-direction: row;
+    }
+  }
+
+  #bestJob{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+  }
+
+  .bestJob-img{
+    max-width: 100%;
+    height: auto;
+    padding-top: 60px;
+    padding-left: 50px;
+  }
+
+  .bestJob-text{
+    margin-top: 150px;
+    padding-right: 50px;
+  }
+
+  .bestJob-text h3{
+    width: 514px;
+    /* height: 61px;
+    left: 730px;
+    top: 1465px; */
+    font-weight: 600;
+    font-size: 36px;
+    color: #000000
+  }
+ 
+  .bestJob-text p{
+    width: 450px;
+    height: 50px;
+    left: 730px;
+    top: 1526px;
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 35px;
+  }
+
+  .checkbox i{
+    display: flex;
+    width: 500px;
+    font-weight: 400;
+    font-size: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 20px;
+  }
+
+  /* categories */
+  .categories{
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .ctg-text{
+    position: relative;
+    
+  }
+
+  .ctg-text h3{
+    width: 514px;
+    /* text-align: center; */
+    padding-left: 500px;
+    /* height: 61px;
+    left: 730px;
+    top: 1465px; */
+    font-weight: 600;
+    font-size: 36px;
+    color: #000000
+  }
+
+  .ctg-text p{
+    width: 450px;
+    height: 50px;
+    left: 730px;
+    top: 1526px;
+    padding-left: 520px;
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 35px;
+  }
+
+  /* css drop cv */
+  .dropCv{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 90px;
+    padding-left: 90px;
+    padding-right: 120px;
+  }  
+  
+  .dropCv-text h3{
+    width: 514px;
+    font-weight: 600;
+    font-size: 36px;
+    color: #000000
+  }
+
+  .dropCv-text p{
+    width: 450px;
+    height: 50px;
+    left: 730px;
+    top: 1526px;
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 70px;
+  }
+
+  .dropCv-img{
+    padding-left: 40px;
+    margin-top: -100px;
+  }
+
+  /* css saysJob */
+  .saysJob{
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 150px;
+  }
+
+  .saysJob-text{
+    position: relative;
+    
+  }
+
+  .saysJob-text h3{
+    width: 514px;
+    /* text-align: center; */
+    padding-left: 500px;
+    /* height: 61px;
+    left: 730px;
+    top: 1465px; */
+    font-weight: 600;
+    font-size: 36px;
+    color: #000000
+  }
+
+  .saysJob-text p{
+    width: 450px;
+    height: 50px;
+    left: 730px;
+    top: 1526px;
+    padding-left: 520px;
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 35px;
+  }
+
+  /* css card slider */
+  /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+::selection{
+  background:	#FF676D;
+  color: #fff;
+} */
+.container{
+  max-width: 950px;
+  width: 100%;
+  overflow: visible;
+  padding: 80px 0;
+ 
+  
+}
+.container .main-card{
+  display: flex;
+  justify-content: space-around;
+  width: 200%;
+  transition: 1s;
+  justify-content: center;
+}
+#two:checked ~ .main-card{
+  margin-left: -100%;
+}
+.container .main-card .cards{
+  width: calc(100% / 2 - 10px);
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin: 0 20px;
+  justify-content: space-between;
+  padding-right: 50px;
+}
+.main-card .cards .card{
+  width: calc(100% / 3 - 10px);
+  background: #D1A8FF;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+.main-card .cards .card:hover{
+  transform: translateY(-15px);
+}
+.cards .card .content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center;
+  text-align: center; */
+}
+.cards .card .content .img{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #983BFF;
+  margin-bottom: 14px;
+}
+.card .content .img img{
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* .card .content .name{
+  font-size: 20px;
+  font-weight: 500;
+}
+.card .content .job{
+  font-size: 20px;
+  color: #FF676D;
+} */
+
+.content{
+  padding-left: 20px;
+  margin-right: 40px;
+}
+
+  
+ .container .button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.button label.active{
+  width: 35px;
+}
+
+#one:checked ~ .button .one{
+  width: 35px;
+}
+#one:checked ~ .button .two{
+  width: 15px;
+}
+#two:checked ~ .button .one{
+  width: 15px;
+}
+#two:checked ~ .button .two{
+  width: 35px;
+}
+input[type="radio"]{
+  display: visible;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .main-card .cards .card{
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .main-card .cards .card{
+    /* margin: 20px 0 10px 0; */
+    width: 100%;
+  }
+}
+
+/* CSS faq */
+  .faq{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .faq-text{
+    display: inline-block;
+    justify-content: space-around;
+    padding-top: 300px;
+    padding-left: 90px;
+    padding-right: 120px;
+    margin-left: 300px;
+  }  
+  
+  .faq-text h3{
+    width: 600px;
+    font-weight: 600;
+    font-size: 36px;
+    color: #000000;
+  }
+
+  .faq-text p{
+    width: 450px;
+    height: 50px;
+    left: 730px;
+    top: 1526px;
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 70px;
+  }
+
+  .wrapper{
+
+    margin-top: 200px;
+    border-color: #000000;
+  }
+
+  a{
+  display: block;
+  background-color: #D1A8FF;
+  color: #000000;
+  width: 474px;
+  height: 45px;
+  left: 762px;
+  top: 3899px;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+  text-decoration: none;
+  padding: 5px 10px;
+  padding-right: 20px;
+  }
+
+  .isi{
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    width: auto;
+  }
+
+  .isi:target{
+    padding: 5px 10px;
+    height: auto
 
   }
