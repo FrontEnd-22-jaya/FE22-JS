@@ -2,6 +2,11 @@
 const form = document.getElementById("form");
 let email = document.getElementById("email");
 let password = document.getElementById("myInput");
+let login = document.getElementById("login");
+
+//variabel utk login validation
+const emailValue = email.value.trim();
+const passwordValue = password.value.trim();
 
 // pop up modal
 const modal = document.querySelector(".modal-bg");
@@ -53,10 +58,6 @@ form.addEventListener("change", (e) => {
 });
 
 function checkInputs() {
-  // trim to remove the whitespaces
-  const emailValue = email.value.trim();
-  const passwordValue = password.value.trim();
-
   if (emailValue === "") {
     setErrorFor(email, "Email is required");
   } else if (!isEmail(emailValue)) {
@@ -87,3 +88,15 @@ function setSuccessFor(input) {
 function isEmail(email) {
   return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
+
+// jika diklik tombol login maka user akan diarahkan ke page lain
+
+login.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  if (emailValue !== "" && isEmail(emailValue) && passwordValue !== "") {
+    window.location.href = "../index.html";
+  } else {
+    alert("Data not valid");
+  }
+});
