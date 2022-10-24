@@ -1,209 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-  
-  <section id="landingPage">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
+  </head>
+  <body>
     <nav id="sticky">
       <div id="logo"><h3>JOBSIDIAN</h3></div>
       <ul id="page">
         <li><a href="">Home</a></li>
         <li><a href="#jobVacancy">Job Vacancy</a></li>
-        <li><a href="">About Us</a></li>
+        <li><a href="">Status</a></li>
         <li><a href="">Contact Us</a></li>
       </ul>
+
       <button onclick="window.location.href='../page/login.html';">Login</button>
+
+
     </nav>
 
-  <div class="container"><section id="home">
-    <div class="home-text">
+    <section id="home">
+      <div class="home-text">
         <h1>FIND YOUR</h1>
         <h1>DREAM JOB HERE</h1>
         <h4>Jobsidian is a platform that provides information about job vacancies. Jobsidian offers jobs that match your abilities, both around your location and out of reach.</h4>
-        <button onclick="window.location.href='';">Explore Job</button>
-    </div>
-    <div class="home-img">
-        <img src="gambar_home.png" alt="" width="600">
-    </div>
-  </section>
- 
-  <section id="steps">
-    <h3>Just 4 Easy Steps to New 
-      Experience</h3>
-    <div id="flex-container">
-    <div class="flex-item">
-      <h5>Don't waste time</h5>
-      <p>Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Sed do eiusmod tempor.</p>
-    </div>
-    <div class="flex-item">
-      <h5>More relationships</h5>
-      <p>Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Sed do eiusmod tempor.</p>
-    </div>
-    <div class="flex-item">
-      <h5>Healthy living</h5>
-      <p>Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Sed do eiusmod tempor.</p>
-    </div>
-    <div class="flex-item">
-      <h5>Increase your value</h5>
-      <p>Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Sed do eiusmod tempor.</p>
-    </div>
-    </div>
-  </section>
-  <section id="aboutUs">
-    <div id="bestJob">
-      <div class="bestJob-img">
-        <img src="bestjob.png" alt="" width="600">
+        <a href="#">Explorer Job</a>
       </div>
-    <div class="bestJob-text">
-      <h3>Best Job Seeker In Indonesia</h3>
-      <p>Looking for a job with Jobsidian provides more attractive offers, accurate information, and the best quality service for finding jobs.</p>
-    <div class="checkbox">
-      <i class='bx bxs-checkbox-checked' >Search for jobs with many categories.</i>
-      <i class='bx bxs-checkbox-checked' >Accurate information about job vacancies.</i>
-      <i class='bx bxs-checkbox-checked' >Partners who have good prospects in the future.</i>
-      <i class='bx bxs-checkbox-checked' >Provide 24 hour service.</i>
-    </div>
-    </div>
-  </section>
-
-  <!-- <div class="categories">
-    <div class="ctg-text">
-      <h3>Popular Jobs Categories</h3>
-      <p>Popular and most searched job categories.</p>
-    </div>
-    <div id="flex-container2">
-      <div class="flex-item2">
-        <img src="ctg1.png" alt="" width="100">
+      <div class="home-img">
+        <img src="gambar_home.png" alt="" width="600" />
       </div>
-      <div class="flex-item2">
-        <img src="ctg2.png" alt="" width="100">
+    </section>
+
+    <section id="steps">
+      <h3>Just 4 Easy Steps to New Experience</h3>
+      <div id="flex-container">
+        <div class="flex-item">
+          <h5>Don't waste time</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+        </div>
+        <div class="flex-item">
+          <h5>More relationships</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+        </div>
+        <div class="flex-item">
+          <h5>Healthy living</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+        </div>
+        <div class="flex-item">
+          <h5>Increase your value</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+        </div>
       </div>
-      <div class="flex-item2">
-        <img src="ctg3.png" alt="" width="100">
-      </div>
-      <div class="flex-item2">
-        <img src="ctg4.png" alt="" width="100">
-      </div>
-    </div>
-  </div> -->
-
-  <div class="dropCv">
-    <div class="dropCv-text">
-      <h3>Drop Your CV Get Hired</h3>
-      <p>Upload your CV to get the best job according to your abilities. Increase your experience and reach your dreams as high as the sky at Jobsidian.</p>
-      <button onclick="window.location.href='';">Drop CV</button>
-    </div>
-    <div class="dropCv-img">
-        <img src="cv.png" alt="" width="600">
-    </div>
-  </div>
-
-  <div class="saysJob">
-    <div class="saysJob-text">
-      <h3>What Says Job Seeker About Us</h3>
-      <p>Various positive reviews from workers at Jobsidian</p>
-    </div>
-
-    <!-- card slider -->
-      <div class="main-card">
-        <div class="cards">
-          <div class="card">
-           <div class="content">
-             <div class="img">
-               <img src="avatar.png" alt="">
-             </div>
-             <div class="details">
-               <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.”</p>
-               <h4>Jasmine Carter, Surabaya</h4>
-             </div>
-            </div>
-          </div>
-
-             
-               <div class="dots">
-                <input type="radio" name="dot" id="one">
-                <input type="radio" name="dot" id="two">
-                <input type="radio" name="dot" id="three">
-               </div>
-              <div class="button">
-                <label for="one" class=" active one"></label>
-                <label for="two" class="two"></label>
-              </div>
-            </div>
-      </div>
-    </div>
-  <div class="faq">
-    <div class="faq-text">
-      <h3>Frequently Asked Question</h3>
-      <p>What do they usually say when looking for work using the app?</p>
-    </div>
-
-    <div class="wrapper">
-      <a href="#faq1">What are the required conditions?</a>
-      <div id="faq1" class="isi">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-    
-      <a href="#faq2">Is there a fee when applying for a job?</a>
-      <div id="faq2" class="isi">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-    
-      <a href="#faq3">Is there any health insurance from the company?</a>
-      <div id="faq3" class="isi">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-
-      <a href="#faq4">Is it permissible to accept two or more jobs?</a>
-      <div id="faq4" class="isi">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-  
-      <a href="#faq5">What guarantee can jobsidian provide?</a>
-      <div id="faq5" class="isi">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-    </div>
-  </div>
-    
-
-  <footer>
-    <div id="f-about">
-      <h3 id="h-footer">About</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, expedita nihil facere assumenda eos ea dolor excepturi nulla libero quaerat explicabo eveniet tenetur maiores.</p>
-    </div>
-    <div id="f-link">
-      <h3 id="h-footer">Link</h3>
-      <ul>
-        <li class="li-footer"><a href="">Home</a></li>
-        <li class="li-footer"><a href="#jobVacancy">Job Vacancy</a></li>
-        <li class="li-footer"><a href="">Status</a></li>
-        <li class="li-footer"><a href="">Contact Us</a></li>
-      </ul>
-    </div>
-    <div id="f-contact">
-      <h3 id="h-footer">Contact us</h3>
-      <p class="p-footer">081356747675</p>
-      <p class="p-footer">jobsidian@gmail.com</p>
-      <div id="sosmed">
-        <a href=""><i class="ssmd bx bxl-instagram-alt"></i></a>
-        <a href=""><i class="ssmd bx bxl-facebook-circle"></i></a>
-        <a href=""><i class="ssmd bx bxl-github"></i></a>
-        <a href=""><i class="ssmd bx bxl-twitter"></i></a>
-      </div>
-    </div>
-  </footer>
-
-  <div id="copyright">
-    <a href=""><h3 class="nameTag fe-22">AnisyaKhanza</h3></a>
-    <a href=""><h3 class="nameTag fe-22">AbilKhairi</h3></a>
-    <h3>Crafted with <i class="bx bxs-heart" style="color: #ff0000"></i> by <span>JOBSIDIAN</span></h3>
-    <a href=""><h3 class="nameTag fe-22">FarrahFahira</h3></a>
-    <h3 class="nameTag">FE-22-GAMING</h3>
-  </div>
-</section>
-</body>
-
+    </section>
+  </body>
 </html>
