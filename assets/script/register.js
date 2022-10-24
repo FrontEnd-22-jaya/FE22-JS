@@ -143,7 +143,7 @@ async function registerAccount(data) {
         "Content-Type": "application/json;charset=UTF-8",
       },
     });
-    window.location.href = "../index.html";
+    window.location.href = "../page/login.html";
     console.log("Congratulations! Your account has been successfully created!", result);
   } catch (error) {
     console.log("Failed!");

@@ -94,9 +94,12 @@ function isEmail(email) {
 login.addEventListener("click", (event) => {
   event.preventDefault();
 
+  window.location.href = "../page/jobVacancy.html";
+  /*
   if (emailValue !== "" && isEmail(emailValue) && passwordValue !== "") {
     window.location.href = "../index.html";
   } else {
     alert("Data not valid");
   }
+  */
 });
