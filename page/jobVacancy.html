@@ -4,10 +4,103 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../assets/css/jobVcancy.css" />
+    <title>apaan ni</title>
+    <link rel="stylesheet" href="../assets/css/JobVacancy.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    
+
+    <script src="../assets/script/jobVacancy.js" defer></script>
   </head>
   <body>
-    <h1>tes</h1>
+    <!-- /*--------------------------------------------Navbar-setting------------------------------------ */ -->
+
+    <section id="jobVacancy">
+      <nav id="sticky">
+        <div id="logo"><h3>JOBSIDIAN</h3></div>
+        <ul id="page">
+          <li><a href="">Home</a></li>
+          <li><a href="#jobVacancy">Job Vacancy</a></li>
+          <!-- <li><a href="">Status</a></li>
+          <li><a href="">Contact Us</a></li> -->
+        </ul>
+        <div id="profile">
+          <h4 id="nameProfile">Hi,<i> users</i></h4>
+          <div id="iconProfile">
+            <a href=""><i class="bx bx-user-circle""></i></a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- /*-------------------------------------Search-setting------------------------------------ */ -->
+
+      <div id="container">
+        <div id="searchBar">
+          <input type="text" id="input-search" placeholder="find job that you need..." />
+          <button id="btn-search" name="search" value="search">Find</button>
+        </div>
+
+        <!-- /*-------------------------------------Categories-setting------------------------------------ */ -->
+
+        <!-- <categories id="cate">
+          
+   
+          <div id="h-cate">
+            <h4>Categories</h4>
+          </div>
+          <cards id="cards">
+            
+          </cards>
+        </categories> -->
+
+        <!-- /*------------------------------Recommendation-setting---------------------------------------- */ -->
+
+        <Recommendation id="recom">
+          <div id="h-recom">
+            <h4>Recommendation</h4>
+          </div>
+
+          <recomjob id="recomjob"> </recomjob>
+        </Recommendation>
+      </div>
+
+      <!-- /*-----------------------------------Footer-setting----------------------------------- */ -->
+
+      <footer>
+        <div id="f-about">
+          <h3 id="h-footer">About</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, expedita nihil facere assumenda eos ea dolor excepturi nulla libero quaerat explicabo eveniet tenetur maiores.</p>
+        </div>
+        <div id="f-link">
+          <h3 id="h-footer">Link</h3>
+          <ul>
+            <li class="li-footer"><a href="">Home</a></li>
+            <li class="li-footer"><a href="#jobVacancy">Job Vacancy</a></li>
+            <li class="li-footer"><a href="">Status</a></li>
+            <li class="li-footer"><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div id="f-contact">
+          <h3 id="h-footer">Contact us</h3>
+          <p class="p-footer">081356747675</p>
+          <p class="p-footer">jobsidian@gmail.com</p>
+          <div id="sosmed">
+            <a href=""><i class="ssmd bx bxl-instagram-alt"></i></a>
+            <a href=""><i class="ssmd bx bxl-facebook-circle"></i></a>
+            <a href=""><i class="ssmd bx bxl-github"></i></a>
+            <a href=""><i class="ssmd bx bxl-twitter"></i></a>
+          </div>
+        </div>
+      </footer>
+
+      <!-- /*-----------------------------------Copyright-setting----------------------------------- */ -->
+
+      <div id="copyright">
+        <a href=""><h3 class="nameTag fe-22">AnisyaKhanza</h3></a>
+        <a href=""><h3 class="nameTag fe-22">AbilKhairi</h3></a>
+        <h3>Crafted with <i class="bx bxs-heart" style="color: #ff0000"></i> by <span>JOBSIDIAN</span></h3>
+        <a href=""><h3 class="nameTag fe-22">FarrahFahira</h3></a>
+        <h3 class="nameTag">FE-22-GAMING</h3>
+      </div>
+    </section>
   </body>
 </html>
