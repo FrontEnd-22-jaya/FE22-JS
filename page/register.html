@@ -1,0 +1,67 @@
+<!-- CSS -->
+<link rel="stylesheet" href="../assets/css/register.css" />
+<!-- CSS utk logo eye pada password -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+<!-- sign up button -->
+<div class="regis-btn">
+  <button id="show-login">Sign Up</button>
+</div>
+
+<div>
+  <img src="Dr-Wesley.jpg" alt="" />
+</div>
+
+<div class="modal-bg">
+  <div class="popup">
+    <div class="close-btn">&times;</div>
+    <div class="form">
+      <h2>Create your JobSidian's account</h2>
+      <form id="form" action="../index.html" method="POST">
+        <div class="form-element">
+          <input type="text" id="email" class="input" />
+          <label class="input-label"> Email Address </label>
+          <small>Error message</small>
+        </div>
+        <div class="form-element">
+          <input type="tel" id="phone" class="input" />
+          <label class="input-label"> Phone </label>
+          <small>Error message</small>
+        </div>
+        <div class="form-element">
+          <input type="password" id="myInput" class="input" />
+          <label class="input-label"> Password </label>
+          <span class="eye" onclick="hidePassword()">
+            <i class="fa-regular fa-eye" id="non-slash"></i>
+            <i class="fa-regular fa-eye-slash" id="eye-slash"></i>
+          </span>
+          <small>Error message</small>
+        </div>
+        <div class="form-element">
+          <input type="password" id="myInput1" class="input" />
+          <label class="input-label"> Re-enter Password </label>
+          <span class="eye" onclick="hidePassword1()">
+            <i class="fa-regular fa-eye" id="non1-slash"></i>
+            <i class="fa-regular fa-eye-slash" id="eye1-slash"></i>
+          </span>
+          <small>Error message</small>
+        </div>
+        <div class="form-element">
+          <button id="register">Sign Up</button>
+        </div>
+        <div class="form-element">
+          <hr />
+        </div>
+        <div class="form-element">
+          <button>Connect to Google</button>
+        </div>
+        <div class="form-element" id="go-to-login">
+          <h5>Already have an account?</h5>
+          <a href="#">Login</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="../assets/script/register.js"></script>
