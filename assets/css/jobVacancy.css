@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#container {
+  margin: 0 100px;
+  /* border-left: 2px solid lightgrey;
+  border-right: 2px solid lightgrey; */
+}
+
+/*--------------------------------------------Navbar-setting------------------------------------ */
+
+nav {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  /* box-shadow: 7px 0 20px lightgray; */
+}
+
+#sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#logo h3 {
+  font-size: 20px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+#logo h3:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+#page {
+  display: flex;
+}
+
+#page li a {
+  margin: 0 20px;
+  transition: 0.5s ease-in-out;
+  color: rgb(154, 93, 183);
+  font-weight: 700;
+  background-color: #fffff000;
+  padding: 8px 16px;
+  transition: all 0.3s ease-in-out;
+}
+#page li a:hover {
+  border-radius: 20px;
+  background-color: rgb(225, 197, 253);
+  color: rgb(101, 61, 120);
+}
+
+#profile {
+  display: flex;
+  align-items: center;
+}
+#iconProfile a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  margin-left: 8px;
+}
+
+/* -------------------------------------Search-setting--------------------------------------------------- */
+
+#searchBar {
+  background-color: rgb(251, 243, 255);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+#input-search {
+  width: 100%;
+  padding: 8px;
+  background-color: rgb(251, 243, 255);
+  border: 1px solid rgb(251, 243, 255);
+  transition: all 0.5s ease-in-out;
+}
+#input-search::placeholder {
+  color: rgb(214, 185, 228);
+}
+#input-search:focus {
+  background-color: white;
+  border: 1px solid blueviolet;
+}
+
+#btn-search {
+  background-color: blueviolet;
+  font-weight: bold;
+  color: white;
+  padding: 8px 30px;
+  transition: all 0.5s ease-in-out;
+}
+#btn-search:hover {
+  background-color: rgb(109, 33, 180);
+  color: whitesmoke;
+  padding: 8px 30px;
+  cursor: pointer;
+}
+
+/* -------------------------------------Categories-setting--------------------------------------------------- */
+
+#cate {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-bottom: 25px;
+}
+
+cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#h-cate {
+  margin: 8px 0;
+}
+
+#card:nth-child(2),
+#card:nth-child(3),
+#card:nth-child(4),
+#card:nth-child(5),
+#card:nth-child(6) {
+  margin: 0 4px;
+}
+
+#card:nth-child(1) {
+  margin-right: 4px;
+}
+#card:nth-child(7) {
+  margin-left: 4px;
+}
+
+#card-cate {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: rgb(221, 188, 253);
+  min-width: 150px;
+  min-height: 115px;
+  border: 1px solid lightslategray;
+  border-radius: 100px 100px 0 0;
+  transition: all 0.5s ease-in-out;
+}
+
+#card-cate:hover {
+  background-color: rgb(207, 165, 248);
+  box-shadow: inset 7px 7px 10px rgb(93, 28, 155);
+}
+
+#name-cate {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-top: 1px solid lightgrey;
+  transition: all 0.5s ease-in-out;
+}
+#name-cate:hover {
+  color: rgb(137, 137, 137);
+}
+
+/* ---------------------------------Recommendation-setting--------------------------------------------------- */
+#h-recom {
+  margin: 8px 0;
+}
+#recomjob {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.job {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 348px;
+  height: 50px;
+  border: 1px solid lightslategray;
+  border-radius: 3px;
+  padding: 12px;
+  margin: 8px 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.job:hover {
+  background-color: rgb(251, 243, 255);
+  box-shadow: 12px 4px 10px rgb(167, 167, 167);
+  border: 1px solid blueviolet;
+}
+
+#kanan {
+  display: flex;
+}
+
+#kiri {
+  display: flex;
+  justify-content: center;
+}
+
+#icon-job {
+  background-color: white;
+  font-size: 24px;
+  /* justify-content: center; */
+  padding: 12px;
+  margin-right: 20px;
+  border: 1px solid black;
+}
+
+#details {
+  display: flex;
+  justify-content: center;
+}
+
+#detail-kiri {
+  margin-right: 30px;
+}
+
+#btn-detail {
+  color: blueviolet;
+  padding: 4px 8px;
+  background-color: white;
+  font-size: 11px;
+  border: 1px solid blueviolet;
+  border-radius: 10px 0 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+#btn-detail:hover {
+  border: 1px solid white;
+  color: rgb(221, 188, 253);
+  background-color: rgb(102, 32, 168);
+}
+
+#h-detail,
+#name-job,
+#experience {
+  margin-bottom: 4px;
+}
+
+.bx-bookmark {
+  font-size: 25px;
+}
+
+/* -------------------------------------Footer-setting--------------------------------------------------- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 25px;
+  background-color: rgb(221, 188, 253);
+  padding: 100px;
+}
+
+#h-footer {
+  margin-bottom: 12px;
+}
+
+#f-about {
+  width: 200px;
+}
+
+#f-link {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.li-footer {
+  margin-bottom: 8px;
+  color: black;
+}
+
+.p-footer {
+  margin-bottom: 8px;
+}
+
+#sosmed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+.ssmd {
+  margin-right: 8px;
+  padding: 4px;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.ssmd:hover {
+  background-color: white;
+  border-radius: 50px;
+}
+
+/* -------------------------------------Copyright-setting--------------------------------------------------- */
+
+#copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+  align-items: center;
+}
+
+.bxs-heart {
+  transition: all 0.5s ease-in-out;
+}
+.bxs-heart:hover {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.fe-22 {
+  cursor: pointer;
+  /* border: 1px solid white; */
+  transition: all 0.5s ease-in-out;
+  padding: 8px;
+}
+.fe-22:hover {
+  color: blueviolet;
+  /* border: 1px solid blueviolet; */
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.nameTag {
+  color: rgb(221, 188, 253);
+}
+/* -------------------------------------Responsive-setting--------------------------------------------------- */
+
+@media (max-width: 734px) {
+  li a {
+    display: none;
+  }
+}
