@@ -1,5 +1,5 @@
 let endPoint = `https://634f64bddf22c2af7b504acd.mockapi.io/jobsidian/`;
-let jobs_endPoint = `${endPoint}jobs`;
+let jobs_endPoint = `${endPoint}jobs?id=id_user`;
 let users_endPoint = `${endPoint}users`;
 
 //--------------------------------------------------------- start categories setting
@@ -38,14 +38,20 @@ cateJobs();
 let recomjobElement = document.getElementById("recomjob");
 
 async function recomJobs() {
-  let response = await fetch(jobs_endPoint);
+  let response = await fetch(jobs_endPoint.replace("id_user", ""));
   let jobs = await response.json();
   // console.log(jobs);
 
-  function createJobCard(item) {
-    let jobParent = document.createElement("job");
-    jobParent.classList.add("job");
-    jobParent.innerHTML += `
+  jobs.forEach((item) => {
+    createJobCard(item);
+  });
+}
+
+function createJobCard(item) {
+  console.log(item);
+  let jobParent = document.createElement("job");
+  jobParent.classList.add("job");
+  jobParent.innerHTML += `
   <div id="kiri">
     <div id="icon-job"><i class="bx bxl-facebook-circle"></i></div>
     <div id="details">
@@ -63,17 +69,13 @@ async function recomJobs() {
     <a href="jobDetail.html">
       <button id="btn-detail" name="detail" value="detail">view detail</button>
     </a>
-    <div id="icon-save"><i class="bx bx-bookmark"></i></div>
+    <div id="icon-save"></div>
     
   </div>
   `;
-    recomjobElement.appendChild(jobParent);
-  }
-
-  jobs.forEach((jobRecommendation) => {
-    createJobCard(jobRecommendation);
-  });
+  recomjobElement.appendChild(jobParent);
 }
+
 recomJobs();
 //--------------------------------------------------------- end recommendation setting
 
@@ -93,19 +95,20 @@ searchQuery.addEventListener("change", (nilai) => {
 });
 
 async function searchJob(keyword) {
-  let resp = await fetch(jobs_endPoint.replace("searchQuery", keyword));
+  let resp = await fetch(jobs_endPoint.replace("id_user", keyword));
   let jobSearch = await resp.json();
   // console.log(jobSearch);
 
   jobSearch.forEach((data) => {
-    recomJobs(data);
+    // console.log(data);
+    createJobCard(data);
   });
   console.log(jobSearch);
   return jobSearch;
 }
 
-// let searchKerja = async (keyword) => {
-//   let resp = await fetch(jobs_endPoint.replace("searchQuery", keyword));
+// let searchKerja = async () => {
+//   let resp = await fetch(jobs_endPoint.replace("searchQuery"));
 //   let result = await resp.json();
 
 //   // console.log(result);
