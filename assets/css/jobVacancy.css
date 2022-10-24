@@ -79,6 +79,14 @@ nav {
   margin-left: 8px;
 }
 
+.bx-user-circle {
+  color: rgb(220, 192, 234);
+  transition: all 0.2s ease-in-out;
+}
+.bx-user-circle:hover {
+  color: rgb(182, 101, 223);
+}
+
 /* -------------------------------------Search-setting--------------------------------------------------- */
 
 #searchBar {
@@ -91,7 +99,7 @@ nav {
 
 #input-search {
   width: 100%;
-  padding: 8px;
+  padding: 8px 20px;
   background-color: rgb(251, 243, 255);
   border: 1px solid rgb(251, 243, 255);
   transition: all 0.5s ease-in-out;
@@ -109,12 +117,13 @@ nav {
   font-weight: bold;
   color: white;
   padding: 8px 30px;
-  transition: all 0.5s ease-in-out;
+  border: 1px solid rgb(251, 243, 255);
+  transition: all 0.3s ease-in-out;
 }
 #btn-search:hover {
-  background-color: rgb(109, 33, 180);
-  color: whitesmoke;
-  padding: 8px 30px;
+  color: blueviolet;
+  background-color: white;
+  border: 1px solid blueviolet;
   cursor: pointer;
 }
 
@@ -160,23 +169,26 @@ cards {
   min-height: 115px;
   border: 1px solid lightslategray;
   border-radius: 100px 100px 0 0;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #card-cate:hover {
   background-color: rgb(207, 165, 248);
   box-shadow: inset 7px 7px 10px rgb(93, 28, 155);
+  border: 1px solid blueviolet;
 }
 
 #name-cate {
   display: flex;
   justify-content: center;
   background-color: white;
+  color: rgb(137, 137, 137);
   border-top: 1px solid lightgrey;
   transition: all 0.5s ease-in-out;
+  padding: 4px 0;
 }
 #name-cate:hover {
-  color: rgb(137, 137, 137);
+  color: rgb(93, 28, 155);
 }
 
 /* ---------------------------------Recommendation-setting--------------------------------------------------- */
@@ -250,13 +262,22 @@ cards {
 }
 
 #h-detail,
-#name-job,
+#name-company,
 #experience {
   margin-bottom: 4px;
 }
 
+#name-company {
+  color: rgb(93, 28, 155);
+}
+
 .bx-bookmark {
   font-size: 25px;
+  color: lightslategray;
+  transition: all 0.3s ease-in-out;
+}
+.bx-bookmark:hover {
+  color: blueviolet;
 }
 
 /* -------------------------------------Footer-setting--------------------------------------------------- */
@@ -292,20 +313,24 @@ footer {
   margin-bottom: 8px;
 }
 
-#sosmed {
+#sosmed a {
   display: flex;
-  justify-content: center;
+}
+#sosmed {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  font-size: 40px;
+  font-size: 28px;
+  padding: 8px 12px;
+  border-radius: 30px;
 }
 .ssmd {
-  margin-right: 8px;
-  padding: 4px;
-  margin-top: 20px;
   transition: all 0.3s ease-in-out;
+  margin: 0 4px;
 }
 .ssmd:hover {
-  background-color: white;
+  color: blueviolet;
   border-radius: 50px;
 }
 
@@ -314,12 +339,12 @@ footer {
 #copyright {
   display: flex;
   justify-content: space-between;
-  padding: 20px 100px;
+  padding: 30px 100px;
   align-items: center;
 }
 
 .bxs-heart {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .bxs-heart:hover {
   font-size: 30px;
@@ -341,6 +366,10 @@ footer {
 
 .nameTag {
   color: rgb(221, 188, 253);
+}
+
+span {
+  font-weight: bolder;
 }
 /* -------------------------------------Responsive-setting--------------------------------------------------- */
 
