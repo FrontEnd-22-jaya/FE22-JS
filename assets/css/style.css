@@ -11,6 +11,10 @@
     letter-spacing: -0.023em; */
 }
 
+html {
+  overflow-x: hidden;
+}
+
 /* @media screen and (max-width: 1000px) {
     #sticky,
     aside {
