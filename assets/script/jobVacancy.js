@@ -63,14 +63,14 @@ async function recomJobs() {
     <a href="jobDetail.html">
       <button id="btn-detail" name="detail" value="detail">view detail</button>
     </a>
-    <div id="icon-save"><i class="bx bx-bookmark"></i></div>
+    <div id="icon-save"></div>
     
   </div>
   `;
     recomjobElement.appendChild(jobParent);
   }
 
-  jobs.forEach((jobRecommendation) => {
+  jobs.slice(0, 9).forEach((jobRecommendation) => {
     createJobCard(jobRecommendation);
   });
 }
@@ -98,17 +98,17 @@ async function searchJob(keyword) {
   // console.log(jobSearch);
 
   jobSearch.forEach((data) => {
-    recomJobs(data);
+    createJobCard(data);
   });
-  console.log(jobSearch);
-  return jobSearch;
+  // console.log(jobSearch);
+  // return jobSearch;
 }
 
 // let searchKerja = async (keyword) => {
 //   let resp = await fetch(jobs_endPoint.replace("searchQuery", keyword));
 //   let result = await resp.json();
 
-//   // console.log(result);
+// console.log(result);
 
 //   let hasilSearch = [];
 //   result.forEach((item) => {

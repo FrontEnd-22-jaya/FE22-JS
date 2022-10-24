@@ -170,6 +170,7 @@ cards {
   border: 1px solid lightslategray;
   border-radius: 100px 100px 0 0;
   transition: all 0.3s ease-in-out;
+  /* margin: 8px; */
 }
 
 #card-cate:hover {
@@ -372,9 +373,28 @@ span {
   font-weight: bolder;
 }
 /* -------------------------------------Responsive-setting--------------------------------------------------- */
-
-@media (max-width: 734px) {
+@media (max-width: 763px) {
   li a {
     display: none;
+  }
+
+  #card-cate {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: rgb(221, 188, 253);
+    min-width: 150px;
+    min-height: 115px;
+    border: 1px solid lightslategray;
+    border-radius: 100px 100px 0 0;
+    transition: all 0.3s ease-in-out;
+    /* margin: 8px; */
+  }
+
+  #card-cate:hover {
+    background-color: rgb(207, 165, 248);
+    box-shadow: inset 7px 7px 10px rgb(93, 28, 155);
+    border: 1px solid blueviolet;
   }
 }
