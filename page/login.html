@@ -1,0 +1,52 @@
+<!-- CSS -->
+<link rel="stylesheet" href="../assets/css/login.css" />
+<!-- CSS utk logo eye pada password -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+<!-- login button -->
+<div class="login-btn">
+  <button id="show-login">Login</button>
+</div>
+
+<div class="modal-bg">
+  <div class="popup">
+    <div class="close-btn">&times;</div>
+    <div class="form">
+      <h2>Login</h2>
+      <form id="form" action="../index.html" method="POST">
+        <div class="form-element">
+          <input type="text" id="email" class="input" />
+          <label class="input-label"> Email Address </label>
+          <small>Error message</small>
+        </div>
+        <div class="form-element">
+          <input type="password" id="myInput" class="input" />
+          <label class="input-label"> Password </label>
+          <span class="eye" onclick="hidePassword()">
+            <i class="fa-regular fa-eye" id="non-slash"></i>
+            <i class="fa-regular fa-eye-slash" id="eye-slash"></i>
+          </span>
+          <small>Error message</small>
+        </div>
+        <div class="form-element">
+          <a href="#">Forgot your password?</a>
+        </div>
+        <div class="form-element">
+          <button id="login">Login</button>
+        </div>
+        <div class="form-element">
+          <hr />
+        </div>
+        <div class="form-element">
+          <button>Connect to Google</button>
+        </div>
+        <div class="form-element" id="go-to-signup">
+          <h5>Havent made an account?</h5>
+          <a href="#">Sign Up Here</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="../assets/script/login.js"></script>
