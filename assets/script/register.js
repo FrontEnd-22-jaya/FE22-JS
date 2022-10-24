@@ -6,6 +6,12 @@ let password = document.getElementById("myInput");
 let password2 = document.getElementById("myInput1");
 let register = document.getElementById("register");
 
+//variabel utk form validation
+const emailValue = email.value.trim();
+const phoneValue = phone.value.trim();
+const passwordValue = password.value.trim();
+const password2Value = password2.value.trim();
+
 // pop up modal
 const modal = document.querySelector(".modal-bg");
 const trigger = document.querySelector(".regis-btn");
@@ -74,10 +80,6 @@ form.addEventListener("change", (e) => {
 
 function checkInputs() {
   // trim to remove the whitespaces
-  const emailValue = email.value.trim();
-  const phoneValue = phone.value.trim();
-  const passwordValue = password.value.trim();
-  const password2Value = password2.value.trim();
 
   if (emailValue === "") {
     setErrorFor(email, "Email cannot be blank");
@@ -141,6 +143,7 @@ async function registerAccount(data) {
         "Content-Type": "application/json;charset=UTF-8",
       },
     });
+    window.location.href = "../index.html";
     console.log("Congratulations! Your account has been successfully created!", result);
   } catch (error) {
     console.log("Failed!");
@@ -155,5 +158,9 @@ register.addEventListener("click", (event) => {
     phone: phone.value,
     password: password.value,
   };
-  registerAccount(user_regis);
+  if (user_regis.email !== "" && isEmail(user_regis.email) && user_regis.phone !== "" && isPhone(user_regis.phone) && user_regis.password !== "" && passwordValue === password2Value) {
+    registerAccount(user_regis);
+  } else {
+    alert("Data not valid");
+  }
 });
